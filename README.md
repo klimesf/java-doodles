@@ -9,6 +9,8 @@ Also, there are [tests in JUnit5](https://github.com/klimesf/java-doodles/blob/m
 - [Skip list](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/search/skiplist/NaiveSkipList.java) with 
 [tests in JUnit5](https://github.com/klimesf/java-doodles/blob/master/src/test/java/cz/filipklimes/search/skiplist/NaiveSkipListTest.java)
 and a [benchmark](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/search/skiplist/SkipListBenchmark.java)!
+- [Sudoku solver](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/constraintProgramming/sudoku)
+using early-stopping [backtracking](https://en.wikipedia.org/wiki/Backtracking) (constraint-programming).
 
 ---
 
