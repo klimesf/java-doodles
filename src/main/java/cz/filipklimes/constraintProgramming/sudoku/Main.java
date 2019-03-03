@@ -18,10 +18,10 @@ public class Main {
         final Solver solver = new BacktrackingSolver();
         boolean printSolutions = Arrays.asList(args).contains("--print-solutions");
 
-        solve(solver, "easy", "sudoku/easy.sdk", "sudoku/easy.solved.sdk", printSolutions);
-        solve(solver, "easy2", "sudoku/easy2.sdk", "sudoku/easy2.solved.sdk", printSolutions);
-        solve(solver, "medium", "sudoku/medium.sdk", "sudoku/medium.solved.sdk", printSolutions);
-        solve(solver, "hard", "sudoku/hard.sdk", "sudoku/hard.solved.sdk", printSolutions);
+        solve(solver, "easy", "data/sudoku/easy.sdk", "data/sudoku/easy.solved.sdk", printSolutions);
+        solve(solver, "easy2", "data/sudoku/easy2.sdk", "data/sudoku/easy2.solved.sdk", printSolutions);
+        solve(solver, "medium", "data/sudoku/medium.sdk", "data/sudoku/medium.solved.sdk", printSolutions);
+        solve(solver, "hard", "data/sudoku/hard.sdk", "data/sudoku/hard.solved.sdk", printSolutions);
     }
 
     private static void solve(
