@@ -4,7 +4,6 @@ import java.util.*;
 
 public class MonteCarloPiApproximator implements Iterator<MonteCarloPiApproximator.ApproximationStep> {
 
-    private final Random random = new Random();
     private final List<Point> points = new ArrayList<>();
     private final int numberOfPoints;
     private long in;
@@ -20,7 +19,7 @@ public class MonteCarloPiApproximator implements Iterator<MonteCarloPiApproximat
 
     @Override
     public ApproximationStep next() {
-        Point p = generatePoint(random);
+        Point p = generatePoint();
         points.add(p);
         if (p.liesInCircle) {
             in++;
@@ -28,9 +27,9 @@ public class MonteCarloPiApproximator implements Iterator<MonteCarloPiApproximat
         return new ApproximationStep(((double) in / points.size()) * 4, p);
     }
 
-    private Point generatePoint(Random random) {
-        double x = random.nextDouble() * 2 - 1;
-        double y = random.nextDouble() * 2 - 1;
+    private Point generatePoint() {
+        double x = Math.random() * 2 - 1;
+        double y = Math.random() * 2 - 1;
         return new Point(x, y, liesInCircle(x, y));
     }
 
