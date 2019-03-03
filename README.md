@@ -11,6 +11,7 @@ Also, there are [tests in JUnit5](https://github.com/klimesf/java-doodles/blob/m
 and a [benchmark](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/search/skiplist/SkipListBenchmark.java)!
 - [Sudoku solver](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/constraintProgramming/sudoku)
 using early-stopping [backtracking](https://en.wikipedia.org/wiki/Backtracking) (constraint-programming).
+- [Monte Carlo Pi approximation](https://github.com/klimesf/java-doodles/blob/master/src/main/java/cz/filipklimes/monteCarlo/pi).
 
 ---
 
